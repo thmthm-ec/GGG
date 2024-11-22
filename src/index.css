@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Outfit', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marcellus', serif;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-normal leading-tight;
+  }
+  .heading-2 {
+    @apply font-display text-3xl md:text-4xl font-normal leading-tight;
+  }
+  .body-large {
+    @apply text-lg font-light leading-relaxed;
+  }
+  .body-regular {
+    @apply text-base leading-relaxed;
+  }
+}
